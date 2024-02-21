@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-      <h1 class="small-text">Jakub Zukal</h1>
+      <h1 class="medium-text">Jakub Zukal</h1>
       <h5 class="dark-text">amFrdWJ6</h5>
       <p class="large-text">Frontend developer with good knowledge of backend</p>
     </header>
@@ -21,30 +21,41 @@
     <section class="flex-row section">
       <h2 class="w20">About</h2>
 
-      <ul class="flex-col w80">
+      <ul class="flex-col w80 liststylenone">
         <li class="flex-row">
             <span>Name:</span>
-            <span>name surname</span>
+            <span>Jakub Zukal</span>
         </li>
 
         <li class="flex-row">
           <span>Date of birth:</span>
-          <span>date</span>
+          <span>17/04/88</span>
         </li>
 
         <li class="flex-row">
           <span>Timezone:</span>
-          <span>GMT+1</span>
+          <span>UTC+1</span>
         </li>
 
         <li class="flex-row">
           <span>Contact:</span>
-          <span>mail, phone?, zoom/discord?</span>
+          <span>(Czech) jakub@zukal.eu; (English) jakub@2bgr.com; Phone in CV</span>
+        </li>
+
+        <li class="flex-row">
+          <span>Languages:</span>
+          <span>Czech (fluent); English (B2)</span>
         </li>
 
         <li class="flex-row">
           <span>Links:</span>
-          <span>CV, github, what else?</span>
+          <span>
+            Curriculum Vitae:
+              <a href="">Česky</a>
+              <a href="">English</a>
+              -
+            <a href="https://github.com/amFrdWJ6">GitHub</a>
+          </span>
         </li>
       </ul>
     </section>
@@ -56,10 +67,15 @@
       <div class="w80">
         <article>
           <div class="flex-row justify-between">
-            <header>DevOps</header>
+            <header>DevOps/SRE</header>
             <span>2021-2022</span>
           </div>
-          <p>TODO: Description</p>
+          <ul>
+            <li>Implementing SRE principles and practices.</li>
+            <li>Supporting developers in production: Understand the frustrations of Devs grappling with production issues. Act as a bridge between dev/prod environments, empathizing with their challenges and burdens. Addressing their needs to streamline deployment processes.</li>
+            <li>Implementing and managing ArgoCD instances for continuous delivery and GitOps workflows.</li>
+            <li>Team lead for last six months.</li>
+          </ul>
         </article>
         <hr />
 
@@ -68,7 +84,15 @@
             <header>Senior System Engineer</header>
             <span>2016-2021</span>
           </div>
-          <p>TODO: Description</p>
+          <ul>
+            <li>Management of database clusters running in OpenStack by Terraform.</li>
+            <li>Management of production applications running in Kubernetes.</li>
+            <li>Monitoring of apps and infrastructure with Prometheus (+AlertManager) and Grafana for real-time visibility into system metrics and performance indicators.</li>
+            <li>Debugging and profiling apps to identify performance bottlenecks, optimize resource utilization, and enhance app stability.</li> 
+            <li>Management of Redis, Couchbase, and MongoDB clusters: installation, configuration, monitoring, and performance tuning.</li>
+            <li>Developing custom Python utilities to automate tasks and enhance operational efficiency.</li>
+            <li>Replaced SaltStack by Ansible.</li>
+          </ul>
         </article>
         <hr />
 
@@ -77,7 +101,10 @@
             <header>System Administrator</header>
             <span>2014-2016</span>
           </div>
-          <p>TODO: Description</p>
+          <ul>
+            <li>Utilizing SaltStack to automate administrative tasks, configuration management, software deployment, and ensuring consistency across infrastructure.</li>
+            <li>Management of big data infrastructure Apache Cassandra and Hadoop clusters: installation, configuration, performance tuning, monitoring, and troubleshooting.</li>
+          </ul>
         </article>
         <hr />
 
@@ -86,7 +113,48 @@
             <header>Junior System Administrator</header>
             <span>2011-2014</span>
           </div>
-          <p>TODO: Description</p>
+          <ul>
+            <li>System administration tasks: server setup, maintenance, and troubleshooting.</li>
+            <li>Monitoring by in-house system (simple scripting in bash, python and perl).</li>
+            <li>Mysql: configuring and managing replication setups to ensure data consistency, high availability, and disaster recovery from backups.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <hr />
+
+    <section class="flex-row section">
+      <h2 class="w20">Tech</h2>
+      <div class="w80">
+        <article>
+          <div>
+            <header>Currently using</header>
+          </div>
+
+          <p class="dark-text medium-text">
+            All development done in VSCode + <a href="https://code.visualstudio.com/docs/devcontainers/containers">devcontainers</a>.
+          </p>
+
+          <p>
+            <strong class="dark-text">Webstack</strong>: TypeScript, React/<span class="dark-text">Vue</span>, NextJS/<span class="dark-text">Vite</span>, Drizzle-ORM/<span class="dark-text">Prisma</span>, AuthJS/<span class="dark-text">Lucia</span>, Tailwind/<span class="dark-text">StyleX</span>, Zod
+          </p>
+
+          <p>
+            <strong class="dark-text">Techstack</strong>: Docker, Git, SQLite, Postgres, Prometheus, Grafana, Python
+          </p>
+        </article>
+        <hr/>
+
+        <article>
+          <div>
+            <header>Used in past</header>
+            <span class="dark-text small-text">
+              The listed technologies below are only those on which I've spent hundreds of hours of hands-on work
+            </span>
+          </div>
+          <p>
+            Ansible, Apache Cassandra, Apache Hadoop, ArgoCD, CouchBase, Kubernetes, MariaDB, NGinx, OpenStack, Redis, SaltStack, Terraform
+          </p>
         </article>
       </div>
     </section>
@@ -96,25 +164,40 @@
       <h2 class="w20">Projects</h2>
       <div class="w80">
         <article>
-          <header>Chef</header>
+          <div class="flex-row justify-between">
+            <header>Chef</header>
+            <a href="">Link</a>
+          </div>
+          <p>TODO:</p>
+        </article>
+        <hr />
+
+        <article>
+          <div class="flex-row justify-between">
+            <header>Kosmetika Hana</header>
+            <a href="">Link</a>
+          </div>
           <p>TODO: Description</p>
         </article>
         <hr />
 
         <article>
-          <header>Kosmetika Hana</header>
+          <div class="flex-row justify-between">
+            <header>Reply</header>
+            <div>
+              <a href="">Link</a> - 
+              <a href="">GitHub</a>
+            </div>
+          </div>
           <p>TODO: Description</p>
         </article>
         <hr />
 
         <article>
-          <header>Reply</header>
-          <p>TODO: Description</p>
-        </article>
-        <hr />
-
-        <article>
-          <header>GrowLog</header>
+          <div class="flex-row justify-between">
+            <header>BackLog</header>
+            <a href="">GitHub</a>
+          </div>
           <p>TODO: Description</p>
         </article>
       </div>
@@ -125,22 +208,51 @@
       <h2 class="w20">Study</h2>
       <div class="w80">
         <article>
-          <header>Masaryk University</header>
-          <p>TODO</p>
+          <div class="flex-row justify-between">
+            <header>Masaryk University</header>
+            <span>2008-2010</span>
+          </div>
+          <p class="small-text dark-text">Computer Systems, Communication and Security: Didn't finished my bachelor's degree.</p>
         </article>
 
         <article>
-          <header>Language School (English)</header>
-          <p>TODO: B1</p>
+          <div class="flex-row justify-between">
+            <header>Language School Miramare (English)</header>
+            <span>2007-2008</span>
+          </div>
+          <p class="small-text dark-text">Finished with B1 level.</p>
+        </article>
+
+        <article>
+          <div class="flex-row justify-between">
+            <header>High School Jaselská</header>
+            <span>2003-2007</span>
+          </div>
         </article>
       </div>
     </section>
     <hr />
 
     <section class="flex-row section">
-      <h2 class="w20">Other</h2>
+      <h2 class="w20">The GAP</h2>
       <div class="w80">
-        ???
+        <h3>
+          Here, I am addressing the gap between the end of 2022 and nowadays. 
+        </h3>
+
+        <p>
+          TL;DR: Life fudged me up, so I decided to address my problems, needs, and desires.
+        </p>
+
+        <p>
+          Life was good and easy, with work providing satisfying challenges. However, weight gain led to health issues with my knee, and that prevented me from focusing on my hobbies (gardening, hiking), which are therapeutic for me. It got worse when I faced loss due to covid, which evolved into additional family issues. I felt preoccupied with my personal and work life. Life was not good and easy.
+        </p>
+        <p>
+          Dreaming of a house outside the city with a large garden, regaining my health, and living a peaceful life again, my wife and I decided to pursue our long-held desires. Leaving our jobs, we bought an old house for renovation. As our new home became livable and I regained control of my weight (lost 40kg+), I hesitated to return to corporate DevOps.
+        </p>
+        <p>
+          Having worked closely with developers for the last few years, I considered a change. Exploring options, I found TypeScript and web development to be the right fit. And here I am.
+        </p>
       </div>
     </section>
   </body>
